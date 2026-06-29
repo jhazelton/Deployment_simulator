@@ -11,10 +11,10 @@ Features:
 - Timestamp logging
 
 Directory Structure:
-archived - Stored old copies of deployed artifacts
-deployed - deployed artifacts
-incoming - input files to be deployed by simulator
-jim_logs - contains a log file
+archived - Stored old copies of deployed files.
+deployed - deployed files.
+incoming - input files to be deployed by simulator.
+jim_logs - contains a log file.
 
 Running Locally:
 python3 jim_dply3.py
@@ -36,4 +36,5 @@ Archived:  0
 Failed:    1
 Deployed:  4
 
-
+Expected behavior:
+The first run of the deployment simulator will result in no files being copied to Archived folder.

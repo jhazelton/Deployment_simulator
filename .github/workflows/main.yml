@@ -38,12 +38,12 @@ jobs:
       - name: Display python version
         run: python3 --version
       
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world, the code was pulled from the repository!
+      # Step 4:  Run the deployment simulator python script.
+      - name: Run Deployment Simulator
+        run: python3 jim_dply3.py
 
-      # Runs a set of commands using the runners shell
+      # Step 5:  Future. Runs a set of unit tests using pytest
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo Add other actions to run unit test using pytest.
+          echo add another set of testing.

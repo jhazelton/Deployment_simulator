@@ -42,13 +42,17 @@ jobs:
       - name: Run Deployment Simulator
         run: python3 jim_dply3.py
 
-      # Step 5:  perform unit tests using python.
-      - name: Unit test 1
-        run: python3 tests/test_validation.py
-        env:
-          PYTHONPATH: .  # Instructing Python to include the root directory in its search path
+      # Step 5:  Install dependencies for pytest
+      - name: Install dependencies
+        run: pip install pytest
+
+      # Step 6:  Run unit tests with pytest
+      - name: Run Unit tests with pytest
+        run: pytest
+ #       env:
+ #         PYTHONPATH: .  # Instructing Python to include the root directory in its search path
       
-      # Step 6:  perform unit tests using pytest
+      # Step 7:  perform unit tests using pytest
       - name: Run a multi-line script
         run: |
           echo Add other actions to run unit test using pytest.

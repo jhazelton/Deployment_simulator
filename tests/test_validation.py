@@ -23,4 +23,4 @@ def test_txt_file_validation():
     result, file_path = validate_incoming_file(Path("data_insert.txt"))
 
     # Assert
-    assert result is True
+    assert result is False

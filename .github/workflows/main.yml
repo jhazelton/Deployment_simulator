@@ -42,7 +42,11 @@ jobs:
       - name: Run Deployment Simulator
         run: python3 jim_dply3.py
 
-      # Step 5:  Future. Runs a set of unit tests using pytest
+      # Step 5:  perform unit tests using python.
+      - name: Unit test 1
+        run: python3 test_validation.py
+      
+      # Step 6:  perform unit tests using pytest
       - name: Run a multi-line script
         run: |
           echo Add other actions to run unit test using pytest.

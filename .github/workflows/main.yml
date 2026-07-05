@@ -44,7 +44,7 @@ jobs:
 
       # Step 5:  perform unit tests using python.
       - name: Unit test 1
-        run: python3 test_validation.py
+        run: python3 tests/test_validation.py
       
       # Step 6:  perform unit tests using pytest
       - name: Run a multi-line script

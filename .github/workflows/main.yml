@@ -49,8 +49,8 @@ jobs:
       # Step 6:  Run unit tests with pytest
       - name: Run Unit tests with pytest
         run: pytest
- #       env:
- #         PYTHONPATH: .  # Instructing Python to include the root directory in its search path
+        env:
+          PYTHONPATH: .  # Instructing Python to include the root directory in its search path
       
       # Step 7:  perform unit tests using pytest
       - name: Run a multi-line script

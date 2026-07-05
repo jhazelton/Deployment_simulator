@@ -45,6 +45,8 @@ jobs:
       # Step 5:  perform unit tests using python.
       - name: Unit test 1
         run: python3 tests/test_validation.py
+        env:
+          PYTHONPATH: .  # Instructing Python to include the root directory in its search path
       
       # Step 6:  perform unit tests using pytest
       - name: Run a multi-line script

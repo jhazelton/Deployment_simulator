@@ -16,9 +16,7 @@ deployed - deployed files.
 incoming - input files to be deployed by simulator.
 jim_logs - contains a log file named dplylogs.
 
-Running Locally:
-- Requires Python 3.x
-- No external dependencies
+Running Locally (Requires Python 3.x and No external dependencies):
 - cd Deployment_simulator
 - python3 jim_dply3.py
 
@@ -26,11 +24,11 @@ Running with Docker (and using the Dockerfile):
 docker run --rm jhazelton55/deployment-simulator:latest
 
 Example Output:
-Copying file -  incoming/customer_api_v1.zip to   ->  deployed/customer_api_v1.zip
-Copying file -  incoming/billing_update_v2.zip to   ->  deployed/billing_update_v2.zip
-Copying file -  incoming/frontend_patch.zip to   ->  deployed/frontend_patch.zip
-Copying file -  incoming/database_script_v3.sql to   ->  deployed/database_script_v3.sql
-Error: Invalid file extension '.txt' on' incoming/data_insert.txt'
+- Copying file -  incoming/customer_api_v1.zip to   ->  deployed/customer_api_v1.zip
+- Copying file -  incoming/billing_update_v2.zip to   ->  deployed/billing_update_v2.zip
+- Copying file -  incoming/frontend_patch.zip to   ->  deployed/frontend_patch.zip
+- Copying file -  incoming/database_script_v3.sql to   ->  deployed/database_script_v3.sql
+- Error: Invalid file extension '.txt' on' incoming/data_insert.txt'
 
 Deployment Summary
 ------------------

@@ -37,7 +37,7 @@ Failed:    1
 Deployed:  4
 
 Expected behavior:
-The first run of the deployment simulator will result in no files being copied to Archived folder.
+On a first run against an empty deployed/ directory, nothing is archived. Subsequent runs archive the existing version before deploying the new one.
 
 ## ⛓️ Enterprise Pipeline Integration
 

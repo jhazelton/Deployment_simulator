@@ -17,8 +17,8 @@ incoming - input files to be deployed by simulator.
 jim_logs - contains a log file named dplylogs.
 
 Running Locally:
-# Requires Python 3.x
-# no external dependencies
+- Requires Python 3.x
+- No external dependencies
 cd Deployment_simulator
 python3 jim_dply3.py
 

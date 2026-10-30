@@ -19,8 +19,8 @@ jim_logs - contains a log file named dplylogs.
 Running Locally:
 - Requires Python 3.x
 - No external dependencies
-cd Deployment_simulator
-python3 jim_dply3.py
+- cd Deployment_simulator
+- python3 jim_dply3.py
 
 Running with Docker (and using the Dockerfile):
 docker run --rm jhazelton55/deployment-simulator:latest
@@ -49,7 +49,7 @@ This repository forms the **Continuous Integration (CI)** foundation of a full-l
 - **Infrastructure & Cloud CD (Terraform & AWS):** The deployment layer has been decoupled into a dedicated infrastructure repository. To view the complete automated orchestration setup—including the AWS VPC network design, EC2 host provisioning, and automated container bootstrap loops—visit the [Deployment Simulator Infrastructure Repository](https://github.com/jhazelton/deployment-simulator-infra).
 
 AWS deployment verified end-to-end — see the infrastructure repo for the Terraform
-configuration and the [verification transcript](https://github.com/jhazelton/deployment-simulator-infra/blob/main/docs/verification-aws-run.txt).
+configuration and the [verification transcript](https://github.com/jhazelton/deployment-simulator-infra/blob/main/docs/Verification-aws-run.txt).
 
 ## 🐳 Docker Hub Artifacts
 The compiled, production-ready image is publicly available for deployment:
